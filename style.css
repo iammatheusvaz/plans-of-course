@@ -1,0 +1,88 @@
+/* Estilos Gerais */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+p {
+  margin: 10px 0;
+  align-self: left;
+}
+
+p::before {
+  content: "✔  ";
+  font-weight: bold;
+  color: green;
+}
+
+.wrong::before {
+  content: "✖  ";
+  font-weight: bold;
+  color: red;
+}
+
+.btn {
+  background-color: #002e6d;
+  border: none;
+  border-radius: 100px;
+  display: inline-block;
+  margin-top: 20px;
+  height: 50px;
+  width: 250px;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  box-shadow: 1px 1px 3px #430d66;
+}
+
+.btn:hover {
+  background-color: #001736;
+  color: #ffffff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.titulo-servicos {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.box-servicos {
+  margin: 0 100px;
+  display: flex;
+}
+
+.box-content {
+  padding: 40px 20px;
+  border: 1px solid;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-content:hover {
+  transform: scale(1.10);
+  transition: 0.3s;
+}
+
+.box-content h2 {
+  padding: 15px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.box-content p {
+  font-size: 16px;
+}
